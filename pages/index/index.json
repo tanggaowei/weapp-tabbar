@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tabbar": "/components/tabbar/tabbar",
+    "home": "/components/home/home",
+    "tag": "/components/tag/tag",
+    "notebook": "/components/notebook/notebook",
+    "me": "/components/me/me"
+  }
+}

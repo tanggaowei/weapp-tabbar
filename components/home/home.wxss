@@ -1,0 +1,6 @@
+/* components/home/home.wxss */
+.body-view{
+  padding: 32rpx;
+  font-size: 36rpx;
+  color: #666;
+}

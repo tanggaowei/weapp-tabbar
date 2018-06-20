@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="section">
+    <form>
+    <textarea placeholder="请输入内容" name="textarea" auto-focus/>
+    <button form-type="submit"> 提交 </button>
+  </form>
+  </view>
+</view>

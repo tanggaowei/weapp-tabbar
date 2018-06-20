@@ -1,0 +1,60 @@
+.c_tabbar {
+  bottom: 0;
+  position: fixed;
+  height: 95rpx;
+  border-top: 1px solid #dcdcdc;  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #999;
+  background-color: #fff;
+  padding: 0;
+}
+
+.c_tabbar .tabbar_item {
+  font-size: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c_tabbar .tabbar_item .tabbar_item_img {
+  width: 54rpx;
+  height: 54rpx;
+}
+
+.c_tabbar .tabbar_item .tabbar_item_title.selected {
+  color: #78d;
+}
+
+/* big icon */
+.c_tabbar .tabbar_item_img.big {
+  width: 95rpx;
+  height: 95rpx;
+}
+
+.c_tabbar  .tabbar_item_img.overflow {
+  position: fixed;
+  bottom: 25rpx;
+}
+
+.c_tabbar .tabbar_item_img.shadow {
+  -moz-box-shadow: 0px 0px 20rpx rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 20rpx rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20rpx rgba(0, 0, 0, 0.5);
+}
+
+.c_tabbar .tabbar_item_img.circle {
+  border-radius: 50%;
+}
+
+page {
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 0 95rpx 0;
+  padding: 0;
+}
