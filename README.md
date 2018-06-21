@@ -18,11 +18,11 @@
 ```
 ## 2、添加组件
 
-现在 wxml 文件里添加组件标签：
+现在 wxml 文件里添加组件：
 ```
 <tabbar data="{{tabbar}}"></tabbar>
 ```
-然后在 js 文件中定义标签的数据，如 tabbar：
+然后在 js 文件中定义组件的数据，如 tabbar：
 ```
 Page({
   data: {
@@ -66,7 +66,7 @@ Page({
   }
 })
 ```
-普通标签和小程序原始标签栏的使用相同，这里重点讲标签项的属性 iconType 和 choose 的使用。
+自定义标签栏组件的数据格式和小程序原始标签栏相同。这里重点讲述新属性 iconType 和 choose 的使用。
 
 iconType 一共有4个值：big、overflow、circle 和 shadow。这四个值可以单独使用，也可以同时使用。同时使用时用空格隔开（实际上会被填写到便签项 class 属性中）。它们的作用如下：
 
