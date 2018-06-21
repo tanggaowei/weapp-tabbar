@@ -112,7 +112,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 
 <tabbar bindchange="tabChange" data="{{tabbar}}"></tabbar>
 ```
-其中 <home>、<tag>、<notebook> 和 <me> 是 4 个自定义组件，分别实现各自的功能。
+其中 `<home>`、<tag>、<notebook> 和 <me> 是 4 个自定义组件，分别实现各自的功能。
 
 2）使用模板
 
