@@ -103,7 +103,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 
 ## 4、实践方案
 
-1）自定义组件
+### 1）自定义组件
 
 自定义组件类似于页面，拥有自己的 wxml 模版和 wxss 样式，便于逻辑与视图分离，比直接使用模板要好。下面是在 index.wxml 中使用自定义组件进行切换的示例代码：
 ```
@@ -116,7 +116,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 ```
 其中 `<home>`、`<tag>`、`<notebook>` 和 `<me>` 是 4 个自定义组件，分别实现各自的功能。
 
-2）使用模板
+### 2）使用模板
 
 使用模板也能实现切换效果，但是逻辑代码可能要写在同一个页面。例如：
 ```
@@ -133,7 +133,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 <tabbar bindchange="tabChange" data="{{tabbar}}"></tabbar>
 ```
 
-3）导航和跳转
+### 3）导航和跳转
 
 可以在监听方法中使用 `wx.navigateTo()` 或 `wx.redirectTo()` 接口切换页面内容。例如：
 ```
