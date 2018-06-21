@@ -4,11 +4,11 @@
 
 ![image](https://github.com/tanggaowei/weapp-tabbar/raw/master/images/Image.png)
 
-自定义标签栏组件的代码在 /commpents/tabbar 目录下，可以直接复制到其他项目里使用。下面讲述使用方法。
+自定义标签栏组件的代码在 `/commpents/tabbar` 目录下，可以直接复制到其他项目里使用。下面讲述使用方法。
 
 ## 1、引用组件
 
-在需要使用标签栏的页面的 json 文件中，使用 usingComponents 配置项引用标签栏组件：
+在需要使用标签栏的页面的 json 文件中，使用 `usingComponents` 配置项引用标签栏组件：
 ```
 {
   "usingComponents": {
@@ -66,21 +66,21 @@ Page({
   }
 })
 ```
-自定义标签栏组件的数据格式和小程序原始标签栏相同。这里重点讲述新属性 iconType 和 choose 的使用。
+自定义标签栏组件的数据格式和小程序原始标签栏相同。这里重点讲述新属性 `iconType` 和 `choose` 的使用。
 
-iconType 一共有4个值：big、overflow、circle 和 shadow。这四个值可以单独使用，也可以同时使用。同时使用时用空格隔开（实际上会被填写到便签项 class 属性中）。它们的作用如下：
+iconType 一共有4个值：`big`、`overflow`、`circle` 和 `shadow`。这四个值可以单独使用，也可以同时使用。同时使用时用空格隔开（实际上会被填写到便签项 class 属性中）。它们的作用如下：
 
 
-	* big 使用大图标，将图标的宽和高设置为 95rpx，和标签栏的高相等；
-	* overflow 将图标上移，使其一部分在标签栏外面显示；
-	* circle 将图标的图片截取为圆形；
-	* shadow 给图标加阴影。
+- **big** 使用大图标，将图标的宽和高设置为 95rpx，和标签栏的高相等；
+- **overflow** 将图标上移，使其一部分在标签栏外面显示；
+- **circle** 将图标的图片截取为圆形；
+- **shadow** 给图标加阴影。
 
 choose 属性一共有两个值：enable 和 disable，默认为 enable。当将其设置为 disable 时，点击该标签项将不会改变标签栏的选中状态，但仍然会触发 change 事件。
 
 ## 3、监听切换事件
 
-使用 bindchange 属性绑定监听事件：
+使用 `bindchange` 属性绑定监听事件：
 ```
 <tabbar bindchange="tabChange" data="{{tabbar}}"></tabbar>
 ```
@@ -135,7 +135,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 
 3）导航和跳转
 
-可以在监听方法中使用 wx.navigateTo() 或 wx.redirectTo() 接口切换页面内容。例如：
+可以在监听方法中使用 `wx.navigateTo()` 或 `wx.redirectTo()` 接口切换页面内容。例如：
 ```
   tabChange: function(e) {
     var key = e.detail.key
