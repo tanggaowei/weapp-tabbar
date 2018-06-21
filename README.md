@@ -2,7 +2,7 @@
 
 源码下载：https://github.com/tanggaowei/weapp-tabbar
 
-![image](http://7xj52g.com1.z0.glb.clouddn.com/Image.png)
+![image](https://github.com/tanggaowei/weapp-tabbar/raw/master/images/Image.png)
 
 自定义标签栏组件的代码在 /commpents/tabbar 目录下，可以直接复制到其他项目里使用。下面讲述使用方法。
 
