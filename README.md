@@ -1,5 +1,7 @@
 # 微信小程序自定义标签栏（TabBar） 组件
 
+支持无文字图标、大图标、悬浮图标等。
+
 源码下载：https://github.com/tanggaowei/weapp-tabbar
 
 ![image](https://github.com/tanggaowei/weapp-tabbar/raw/master/images/Image.png)
