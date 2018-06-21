@@ -2,6 +2,8 @@
 
 源码下载：https://github.com/tanggaowei/weapp-tabbar
 
+![image][http://7xj52g.com1.z0.glb.clouddn.com/Image.png]
+
 自定义标签栏组件的代码在 /commpents/tabbar 目录下，可以直接复制到其他项目里使用。下面讲述使用方法。
 
 ## 1、引用组件
@@ -97,7 +99,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
     }
   }
 ```
-监听方法会得到两个数据：e.detail.key 和 e.detail.index。其中 e.detail.key 对应数据  tabbar.list 数组元素的 key 值，不如上面的 home 、tag、new、notebook 和 me。e.detail.index 对应该数组元素的序号，如 0、1、2、3、4。 
+监听方法会得到两个数据：`e.detail.key` 和 `e.detail.index`。其中 e.detail.key 对应数据  tabbar.list 数组元素的 key 值，不如上面的 home 、tag、new、notebook 和 me。e.detail.index 对应该数组元素的序号，如 0、1、2、3、4。 
 
 ## 4、实践方案
 
@@ -112,7 +114,7 @@ choose 属性一共有两个值：enable 和 disable，默认为 enable。当将
 
 <tabbar bindchange="tabChange" data="{{tabbar}}"></tabbar>
 ```
-其中 `<home>`、<tag>、<notebook> 和 <me> 是 4 个自定义组件，分别实现各自的功能。
+其中 `<home>`、`<tag>`、`<notebook>` 和 `<me>` 是 4 个自定义组件，分别实现各自的功能。
 
 2）使用模板
 
